@@ -9,4 +9,5 @@
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/vorachet/everyday_research_tools/master/royinsict.rb)"
 ```
 
+![Logo](https://raw.githubusercontent.com/vorachet/everyday_research_tools/master/master/royinsict.gif)
 

@@ -7,8 +7,8 @@ require 'nokogiri'
 trap("INT") { puts "Bye!"; exit}
 
 loop do
-  puts "Thai/English Vocabulary Source: www.royin.go.th"
-  puts "Enter Thai/English Vocabulary Word"
+  puts "Vocabulary Source: www.royin.go.th"
+  puts "Enter Thai or English Vocabulary Word"
   w = gets.chomp
   uri = URI('http://www.royin.go.th/coined_word/func_lookup.php')
   res = Net::HTTP.post_form(uri, 'word' => w, 'funcName' => 'lookupWord', 'book_id' => 'undefined', 'status' => 'lookup')

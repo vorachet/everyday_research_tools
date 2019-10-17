@@ -2,7 +2,10 @@
 
 # For Thai Student/Researcher
 
-## Services on www.royin.go.th (Office of the Royal Society)
+## Services on www.royin.go.th 
+
+Usage guide 
+https://www.youtube.com/watch?v=u3_AaWnCrK0
 
 ### Thai Dictionary Lookup 
 ```

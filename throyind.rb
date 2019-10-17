@@ -11,13 +11,13 @@ loop do
   puts "Enter Thai Word"
   w = gets.chomp
   uri = URI('http://www.royin.go.th/dictionary/func_lookup.php')
-  res = Net::HTTP.post_form(uri, 'word' => w, 'funcName' => 'lookupWord', 'status' => 'domain')
+  res = Net::HTTP.post_form(uri, "word" => w, "funcName" => "lookupWord", "status" => "domain")
   doc = Nokogiri::HTML(res.body)
   puts "\n\n"
-  doc.search('div.panel-heading').drop(0).each do |row|
-    print row.text.strip + ' = '
+  doc.search("div.panel-heading").drop(0).each do |row|
+    print row.text.strip + " = " 
   end
-  doc.search('div.panel-body').drop(1).each do |row|
+  doc.search("div.panel-body").drop(1).each do |row|
     puts row.text.strip
   end
   print "\n\n"

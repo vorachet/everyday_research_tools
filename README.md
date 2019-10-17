@@ -1,6 +1,6 @@
 # Everyday Research Tools 
 
-# For Thai Student/Researcher
+# For Thai Student
 
 ## Services on www.royin.go.th 
 

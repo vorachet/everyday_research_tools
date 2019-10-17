@@ -11,9 +11,9 @@ loop do
   puts "Enter Thai or English Vocabulary Word"
   w = gets.chomp
   uri = URI('http://www.royin.go.th/coined_word/func_lookup.php')
-  res = Net::HTTP.post_form(uri, 'word' => w, 'funcName' => 'lookupWord', 'book_id' => 'undefined', 'status' => 'lookup')
+  res = Net::HTTP.post_form(uri, "word" => w, "funcName" => "lookupWord", "book_id" => "undefined", "status" => "lookup")
   doc = Nokogiri::HTML(res.body)
-  doc.search('div.panel-info').each do |row|
+  doc.search("div.panel-info").each do |row|
     puts ""
     puts row.text.gsub(w, "\r\n").strip!
   end
